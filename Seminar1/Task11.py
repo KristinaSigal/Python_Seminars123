@@ -6,6 +6,6 @@
     - Для N = 5: 1, -3, 9, -27, 81'''
 
 N = int(input('Введите число N '))
-for i in range(0, (N+1)-1):
-    f = (3**i)*((-1)**(i))
-    print(f)
+for i in range(0, N):
+    f = 3**i*(-1)**i
+    print(f, end = '  ')
