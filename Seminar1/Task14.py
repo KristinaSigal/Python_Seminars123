@@ -10,7 +10,7 @@ number = (input('Введите вещественное число '))
 def sumDigit(number):
     sum = 0
     for i in number:
-        if i != '.' and i != ',':
+        if i.isdigit(): 
             sum = sum + int(i)
     return sum
 print(f"Сумма цифр в числе {number} равна {sumDigit(number)}")
